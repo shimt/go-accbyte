@@ -2,7 +2,6 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-// Package accbyte provides definition for ASCII control characters.
 package accbyte
 
 import (
@@ -65,9 +64,9 @@ func ExampleString() {
 	s2 := String(HT)
 	fmt.Printf("ESC = \"%s\", HT = \"%s\"\n", s1, s2)
 
-	fmt.Printf("String(0xFF) == \"\") = %v\n", String(0xFF) == "")
+	fmt.Printf("(String(0xFF) == \"\") = %v\n", String(0xFF) == "")
 
 	// Output:
 	// ESC = "ESC", HT = "HT"
-	// String(0xFF) == "") = true
+	// (String(0xFF) == "") = true
 }
